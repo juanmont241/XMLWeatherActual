@@ -92,7 +92,7 @@ namespace XMLWeather
         //Find the city's file by changing the city's name in the url 
         public static void ExtractSearchForcast()
         {
-                XmlReader reader = XmlReader.Create("http://api.openweathermap.org/data/2.5/weather?q=" + urlCity + "&mode=xml&units=metric&appid=3f2e224b815c0ed45524322e145149f0");
+                XmlReader reader = XmlReader.Create("https://api.openweathermap.org/data/2.5/weather?q={" +urlCity+ "}&appid=9c6554fd1d95f2f89995356df799b47e");
 
                //Fill day object with required data 
 
@@ -100,26 +100,30 @@ namespace XMLWeather
                reader.ReadToFollowing("city");
                days[0].location = reader.GetAttribute("name");
 
-                //Find the current max, min, and current temperature and add to appropriate item in days list
-                reader.ReadToFollowing("temperature");
+              reader.ReadToFollowing("time");
+              days[0].date = reader.GetAttribute("day");
+
+              reader.ReadToFollowing("symbol");
+              days[0].condition = reader.GetAttribute("number");
+              days[0].visibility = reader.GetAttribute("name");
+
+               //Find the current max, min, and current temperature and add to appropriate item in days list
+               reader.ReadToFollowing("temperature");
                 days[0].currentTemp = reader.GetAttribute("value");
                 days[0].tempLow = reader.GetAttribute("min");
                 days[0].tempHigh = reader.GetAttribute("max");
-
-                ////Round the max temperture and placed it on trueMax
-                //double tempDoubleMax = Convert.ToDouble(days[0].tempHigh);
-                //int roundMax = Convert.ToInt32(Math.Round(tempDoubleMax));
-                //roundMax = trueMax;
-
-                ////Round the min temperture and placed it on trueMix
-                //double tempDoubleMin = Convert.ToDouble(days[0].tempLow);
-                //int roundMin = Convert.ToInt32(Math.Round(tempDoubleMin));
-                //roundMin = trueMin;
-            }
+                //Supposes to update the CurrentScreen with new infomation
+               // CurrentScreen.DisplayCurrent();
+        }
 
         }
     }
 
-//Remember to Ask:
-//System.ArgumentOutOfRangeException: (Search Bar/how to do the search bar)
-//Is rounding working? (stuck at 0 degrees)
+//Issues with the code:
+//System.ArgumentOutOfRangeException: & System.Net.WebException: 'The remote server returned an error: (404) Not Found.' (Search Bar error)
+//Is rounding working? (stuck at 0 degrees at currentscreen)
+
+//Functions missing:
+//Search bar to work
+//Error message on the search bar
+//Rounding not working on currentscreen but for some reason forecastscreen works?

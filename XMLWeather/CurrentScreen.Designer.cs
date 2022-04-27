@@ -62,7 +62,7 @@
             this.maxLabel.BackColor = System.Drawing.Color.Transparent;
             this.maxLabel.Font = new System.Drawing.Font("Rockwell", 19.8F, System.Drawing.FontStyle.Underline);
             this.maxLabel.ForeColor = System.Drawing.Color.Black;
-            this.maxLabel.Location = new System.Drawing.Point(235, 305);
+            this.maxLabel.Location = new System.Drawing.Point(299, 305);
             this.maxLabel.Name = "maxLabel";
             this.maxLabel.Size = new System.Drawing.Size(66, 31);
             this.maxLabel.TabIndex = 31;
@@ -74,7 +74,7 @@
             this.minLabel.BackColor = System.Drawing.Color.Transparent;
             this.minLabel.Font = new System.Drawing.Font("Rockwell", 19.8F, System.Drawing.FontStyle.Underline);
             this.minLabel.ForeColor = System.Drawing.Color.Black;
-            this.minLabel.Location = new System.Drawing.Point(235, 359);
+            this.minLabel.Location = new System.Drawing.Point(299, 359);
             this.minLabel.Name = "minLabel";
             this.minLabel.Size = new System.Drawing.Size(60, 31);
             this.minLabel.TabIndex = 29;
@@ -86,7 +86,7 @@
             this.tempLabel.BackColor = System.Drawing.Color.Transparent;
             this.tempLabel.Font = new System.Drawing.Font("Rockwell", 48F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tempLabel.ForeColor = System.Drawing.Color.Black;
-            this.tempLabel.Location = new System.Drawing.Point(112, 82);
+            this.tempLabel.Location = new System.Drawing.Point(23, 82);
             this.tempLabel.Name = "tempLabel";
             this.tempLabel.Size = new System.Drawing.Size(278, 72);
             this.tempLabel.TabIndex = 26;
@@ -121,7 +121,7 @@
             this.minOutput.BackColor = System.Drawing.Color.Transparent;
             this.minOutput.Font = new System.Drawing.Font("Rockwell", 19.8F, System.Drawing.FontStyle.Underline);
             this.minOutput.ForeColor = System.Drawing.Color.Black;
-            this.minOutput.Location = new System.Drawing.Point(372, 359);
+            this.minOutput.Location = new System.Drawing.Point(365, 359);
             this.minOutput.Name = "minOutput";
             this.minOutput.Size = new System.Drawing.Size(78, 31);
             this.minOutput.TabIndex = 44;
@@ -133,7 +133,7 @@
             this.maxOutput.BackColor = System.Drawing.Color.Transparent;
             this.maxOutput.Font = new System.Drawing.Font("Rockwell", 19.8F, System.Drawing.FontStyle.Underline);
             this.maxOutput.ForeColor = System.Drawing.Color.Black;
-            this.maxOutput.Location = new System.Drawing.Point(372, 305);
+            this.maxOutput.Location = new System.Drawing.Point(371, 305);
             this.maxOutput.Name = "maxOutput";
             this.maxOutput.Size = new System.Drawing.Size(84, 31);
             this.maxOutput.TabIndex = 45;
@@ -157,7 +157,7 @@
             this.outdoorLabel.BackColor = System.Drawing.Color.Transparent;
             this.outdoorLabel.Font = new System.Drawing.Font("Rockwell", 24F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.outdoorLabel.ForeColor = System.Drawing.Color.Black;
-            this.outdoorLabel.Location = new System.Drawing.Point(4, 203);
+            this.outdoorLabel.Location = new System.Drawing.Point(144, 222);
             this.outdoorLabel.Name = "outdoorLabel";
             this.outdoorLabel.Size = new System.Drawing.Size(138, 36);
             this.outdoorLabel.TabIndex = 71;
@@ -167,7 +167,7 @@
             // 
             this.weatherIcon.BackColor = System.Drawing.Color.Transparent;
             this.weatherIcon.InitialImage = null;
-            this.weatherIcon.Location = new System.Drawing.Point(222, 157);
+            this.weatherIcon.Location = new System.Drawing.Point(179, 69);
             this.weatherIcon.Name = "weatherIcon";
             this.weatherIcon.Size = new System.Drawing.Size(214, 123);
             this.weatherIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;

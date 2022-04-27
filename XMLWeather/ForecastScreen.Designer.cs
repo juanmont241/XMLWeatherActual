@@ -81,7 +81,7 @@
             this.minTemp2.AutoSize = true;
             this.minTemp2.Font = new System.Drawing.Font("Rockwell", 19.8F, System.Drawing.FontStyle.Underline);
             this.minTemp2.ForeColor = System.Drawing.Color.White;
-            this.minTemp2.Location = new System.Drawing.Point(21, 251);
+            this.minTemp2.Location = new System.Drawing.Point(13, 253);
             this.minTemp2.Name = "minTemp2";
             this.minTemp2.Size = new System.Drawing.Size(234, 31);
             this.minTemp2.TabIndex = 46;
@@ -92,7 +92,7 @@
             this.maxTemp2.AutoSize = true;
             this.maxTemp2.Font = new System.Drawing.Font("Rockwell", 19.8F, System.Drawing.FontStyle.Underline);
             this.maxTemp2.ForeColor = System.Drawing.Color.White;
-            this.maxTemp2.Location = new System.Drawing.Point(21, 220);
+            this.maxTemp2.Location = new System.Drawing.Point(13, 220);
             this.maxTemp2.Name = "maxTemp2";
             this.maxTemp2.Size = new System.Drawing.Size(233, 31);
             this.maxTemp2.TabIndex = 44;
@@ -114,7 +114,7 @@
             this.date3.AutoSize = true;
             this.date3.Font = new System.Drawing.Font("Rockwell", 19.8F, System.Drawing.FontStyle.Underline);
             this.date3.ForeColor = System.Drawing.Color.White;
-            this.date3.Location = new System.Drawing.Point(13, 284);
+            this.date3.Location = new System.Drawing.Point(13, 293);
             this.date3.Name = "date3";
             this.date3.Size = new System.Drawing.Size(71, 31);
             this.date3.TabIndex = 69;
@@ -125,7 +125,7 @@
             this.minTemp3.AutoSize = true;
             this.minTemp3.Font = new System.Drawing.Font("Rockwell", 19.8F, System.Drawing.FontStyle.Underline);
             this.minTemp3.ForeColor = System.Drawing.Color.White;
-            this.minTemp3.Location = new System.Drawing.Point(19, 355);
+            this.minTemp3.Location = new System.Drawing.Point(10, 366);
             this.minTemp3.Name = "minTemp3";
             this.minTemp3.Size = new System.Drawing.Size(234, 31);
             this.minTemp3.TabIndex = 67;
@@ -136,7 +136,7 @@
             this.maxTemp3.AutoSize = true;
             this.maxTemp3.Font = new System.Drawing.Font("Rockwell", 19.8F, System.Drawing.FontStyle.Underline);
             this.maxTemp3.ForeColor = System.Drawing.Color.White;
-            this.maxTemp3.Location = new System.Drawing.Point(20, 324);
+            this.maxTemp3.Location = new System.Drawing.Point(13, 335);
             this.maxTemp3.Name = "maxTemp3";
             this.maxTemp3.Size = new System.Drawing.Size(233, 31);
             this.maxTemp3.TabIndex = 65;
@@ -158,7 +158,7 @@
             this.minTemp1.AutoSize = true;
             this.minTemp1.Font = new System.Drawing.Font("Rockwell", 19.8F, System.Drawing.FontStyle.Underline);
             this.minTemp1.ForeColor = System.Drawing.Color.White;
-            this.minTemp1.Location = new System.Drawing.Point(13, 136);
+            this.minTemp1.Location = new System.Drawing.Point(12, 136);
             this.minTemp1.Name = "minTemp1";
             this.minTemp1.Size = new System.Drawing.Size(234, 31);
             this.minTemp1.TabIndex = 71;
@@ -169,7 +169,7 @@
             this.maxTemp1.AutoSize = true;
             this.maxTemp1.Font = new System.Drawing.Font("Rockwell", 19.8F, System.Drawing.FontStyle.Underline);
             this.maxTemp1.ForeColor = System.Drawing.Color.White;
-            this.maxTemp1.Location = new System.Drawing.Point(21, 105);
+            this.maxTemp1.Location = new System.Drawing.Point(13, 105);
             this.maxTemp1.Name = "maxTemp1";
             this.maxTemp1.Size = new System.Drawing.Size(233, 31);
             this.maxTemp1.TabIndex = 70;
@@ -221,7 +221,7 @@
             // 
             this.weatherIcon3.BackColor = System.Drawing.Color.Transparent;
             this.weatherIcon3.InitialImage = null;
-            this.weatherIcon3.Location = new System.Drawing.Point(204, 298);
+            this.weatherIcon3.Location = new System.Drawing.Point(204, 309);
             this.weatherIcon3.Name = "weatherIcon3";
             this.weatherIcon3.Size = new System.Drawing.Size(124, 79);
             this.weatherIcon3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -245,7 +245,7 @@
             this.searchLabel.BackColor = System.Drawing.Color.Transparent;
             this.searchLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.searchLabel.ForeColor = System.Drawing.Color.White;
-            this.searchLabel.Location = new System.Drawing.Point(219, 14);
+            this.searchLabel.Location = new System.Drawing.Point(212, 14);
             this.searchLabel.Name = "searchLabel";
             this.searchLabel.Size = new System.Drawing.Size(82, 28);
             this.searchLabel.TabIndex = 83;

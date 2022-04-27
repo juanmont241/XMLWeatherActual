@@ -51,15 +51,15 @@ namespace XMLWeather
                 weatherIcon.Image = CurrentScreen.imageIcons[5];
             }
 
-            //Adds the respected date, rounded max, and min
+            //Adds the respected date, rounded max, and min for each day in the Forecast
             date1.Text = Form1.days[1].date;
             double forDoubleMax = Convert.ToDouble(Form1.days[1].tempHigh);
             int forRoundMax = Convert.ToInt32(Math.Round(forDoubleMax));
-            minTemp1.Text = forRoundMax + "°";
+            minTemp1.Text = forRoundMax + "°C";
 
             double forDoubleMin = Convert.ToDouble(Form1.days[1].tempLow);
             int forRoundMin = Convert.ToInt32(Math.Round(forDoubleMin));
-            maxTemp1.Text = forRoundMin + "°";
+            maxTemp1.Text = forRoundMin + "°C";
 
 
             //----------------------- DAY 2 -----------------------//
@@ -97,11 +97,11 @@ namespace XMLWeather
 
             double forDoubleMax2 = Convert.ToDouble(Form1.days[2].tempHigh);
             int forRoundMax2 = Convert.ToInt32(Math.Round(forDoubleMax2));
-            minTemp2.Text = forRoundMax2 + "°";
+            minTemp2.Text = forRoundMax2 + "°C";
 
             double forDoubleMin2 = Convert.ToDouble(Form1.days[2].tempLow);
             int forRoundMin2 = Convert.ToInt32(Math.Round(forDoubleMin2));
-            maxTemp2.Text = forRoundMin2 + "°";
+            maxTemp2.Text = forRoundMin2 + "°C";
 
             //----------------------- DAY 3 -----------------------//
 
@@ -138,15 +138,15 @@ namespace XMLWeather
             
             double forDoubleMax3 = Convert.ToDouble(Form1.days[3].tempHigh);
             int forRoundMax3 = Convert.ToInt32(Math.Round(forDoubleMax3));
-            minTemp3.Text = forRoundMax3 + "°";
+            minTemp3.Text = forRoundMax3 + "°C";
 
             double forDoubleMin3 = Convert.ToDouble(Form1.days[3].tempLow);
             int forRoundMin3 = Convert.ToInt32(Math.Round(forDoubleMin3));
-            maxTemp3.Text = forRoundMin3 + "°";
+            maxTemp3.Text = forRoundMin3 + "°C";
         }
 
 
-        private void label3_Click(object sender, EventArgs e)
+        private void label3_Click(object sender, EventArgs e) //When clicked, sends to currentscreen
         {
             Form f = this.FindForm();
             f.Controls.Remove(this);
@@ -155,7 +155,7 @@ namespace XMLWeather
             f.Controls.Add(cs);
         }
 
-        private void searchLabel_Click(object sender, EventArgs e)
+        private void searchLabel_Click(object sender, EventArgs e) //When clicked, sends to searchscreen
         {
             Form f = this.FindForm();
             f.Controls.Remove(this);

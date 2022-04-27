@@ -38,7 +38,7 @@ namespace XMLWeather
         private void startButton_Click(object sender, EventArgs e) //Starts finding the city from the user's input
         {
             Form1.urlCity = userInput.Text; //user input of their city (Has to be written like this: Stratford,CA)
-            Form1.days.Clear(); //Clears the days list
+         //   Form1.days.Clear(); //Clears the days list
 
             //Does the Forecast and Current functions again for the new city
             Form1.ExtractSearchForcast();
@@ -49,10 +49,6 @@ namespace XMLWeather
             CurrentScreen fs = new CurrentScreen(); //Sends to the CurrentScreen to see the new city's results
             f.Controls.Add(fs);
 
-            //if (newDay.date != null)
-            //{
-            //    days.Add(newDay);
-            //}
         }
 
 

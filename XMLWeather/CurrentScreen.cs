@@ -78,11 +78,12 @@ namespace XMLWeather
 
             //Display the main data about Stratford
             cityOutput.Text = Form1.days[0].location; //City
-            tempLabel.Text = Form1.trueInt + "°"; //Temperture (Rounded)
+            tempLabel.Text = Form1.days[0].currentTemp + "°C"; //Temperture (For some reason, the rounded code doesn't work with negative numbers for some reason.
+                                                              //But why does the forcast rounded code work for rounding?)
             weatherIcon.Text = Form1.days[0].condition; //Weather Icon
             outdoorLabel.Text = Form1.days[0].visibility; //What is the weather (ex: rain and snow)
-            minOutput.Text = Form1.trueMin + "°"; //The min temperture (Rounded)
-            maxOutput.Text = Form1.trueMax + "°"; //The max temperture (Rounded)
+            minOutput.Text = Form1.days[0].tempLow + "°C"; //The min temperture 
+            maxOutput.Text = Form1.days[0].tempHigh + "°C"; //The max temperture 
             currentDate.Text = Form1.days[0].date; //What day is it today
         }
 
